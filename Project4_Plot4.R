@@ -14,5 +14,5 @@ coalSum$year <- c(1999, 2002, 2005, 2008)
 
 ## Plotting the total Emissions from coal in the USA
 png('plot4.png', width = 480, height = 480, bg = 'transparent')
-ggplot(coalSum, aes(x = year, y = Emissions/10000)) + geom_bar(stat = 'identity') + labs(title = 'Total Emission from Coal in the USA', x = 'Year', y = 'Emissions')
+ggplot(coalSum, aes(x = year, y = Emissions/10000, fill = 'year')) + geom_bar(stat = 'identity') + labs(title = 'Total Emission from Coal in the USA', x = 'Year', y = 'Emissions')
 dev.off()
